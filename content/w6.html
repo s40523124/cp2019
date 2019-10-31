@@ -159,12 +159,24 @@ img.add_border {
 <p><a href="https://github.com/s40523124/cp2019/blob/master/downloads/dart_ex/for/main.dart">程式碼</a></p>
 <pre class="brush:dart;auto-links:false;toolbar:false" contenteditable="false">int i;
 int sum;
-  
+//將i,sum設置成數字變數
+
 void main() {
+//"main(){}"此函式可囊括一個程式，也是以此判別哪裏有程式要進行，大括弧裡的是主程式
   sum = 0;
+//在這裡將sum設成0
   for ( i = 0; i &lt;= 10; i++) {
-    print('$i');
+//以for迴圈函式定義i且賦予條件；(初始i=多少,i小於十時,i+1) 
+//在for迴圈裡被定義初始數字時，此初始數字會逐次依條件增加或減少，直到觸發條件為止
+    print(i);
+//print可將數字或字串輸出到結果
     sum += i;
+//程式讀到這裡時會將sum加上此時i的數字
+  }
+  print("sum=$sum");
+//for迴圈結束後將sum最後的值印出來ㄋ
+}
+
   }
   print("$sum");
 }</pre>
