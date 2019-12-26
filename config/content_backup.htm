@@ -151,9 +151,33 @@ All rights reserved | This template is made with <i aria-hidden="true" class="ic
                     </script>
             -->
 <script src="/cmsimde/static/chimper/js/main.js"></script>
-<h2><span>W16 查驗考試</span></h2>
-<p></p>
-<p>function getDart(dirname){ source = "https://dartpad.github.io/embed-dart.html?gh_owner=s40523124&amp;gh_repo=cp2019bg1&amp;gh_path=downloads/dart_ex/" + dirname + "&amp;theme=dark"; document.getElementById("iframe").src = source ; } function getHtmlDart(dirname){ source = "https://dartpad.github.io/embed-html.html?gh_owner=s40523124&amp;gh_repo=cp2019bg1&amp;gh_path=downloads/dart_ex/" + dirname + "&amp;theme=dark"; document.getElementById("iframe").src = source ; } function getFlutter(dirname){ source = "https://dartpad.github.io/embed-flutter.html?gh_owner=s40523124&amp;gh_repo=cp2019bg1&amp;gh_path=downloads/dart_ex/" + dirname + "&amp;theme=dark"; document.getElementById("iframe").src = source ; } function largest(){ document.getElementById("iframe").width = document.body.clientWidth ; document.getElementById("iframe").height = document.body.clientWidth*0.5 ; } function original(){ document.getElementById("iframe").width = 800 ; document.getElementById("iframe").height = 600 ; }</p>
+<h2>W16 查驗考試</h2>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=s40523124&gh_repo=cp2019bg1&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=s40523124&gh_repo=cp2019bg1&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=s40523124&gh_repo=cp2019bg1&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script>
 <!-- 取 Dart 程式的按鈕 -->
 <h4>純 Dart 程式</h4>
 <p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('rk_ex1')">RK ex1</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button></p>
@@ -164,5 +188,3 @@ All rights reserved | This template is made with <i aria-hidden="true" class="ic
 <p><button onclick="getDart('mass_spring_damping')"><!-- 內建放入的 Dart 原始碼 --></button></p>
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
 <p><br/><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
-<p><br/>W13 &lt;&lt; <a href="/W13.html">Previous</a> <a href="/W11.html">Next</a> &gt;&gt; W11</p>
-<p></p>
