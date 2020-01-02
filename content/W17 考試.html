@@ -189,10 +189,38 @@ document.getElementById("iframe").height = 600 ;
 <h4></h4>
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
 <p><br/><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
-<p>請輸入所要轉換的重量<br/>以數字加上 kg 或 lb:<br/><br/><input id="temp" max="30" min="1" type="text" value="20kg"/> <input id="submit" type="button" value="換算"/><br/> <br/>轉換結果:<br/><br/><label id="output"></label></p>
+<p>請輸入所要轉換的重量<br/>以數字加上 kg 或 lb:<br/><br/><input id="temp" max="30" min="1" type="text" value="20kg"/> <input id="submit" type="button" value="換算"/><br/> <br/>轉換結果:</p>
 <p>
 <script src="/../cp2019/downloads/dart_ex/w17ex3/w17ex3.js"></script>
-</p><br />W16 查驗考試 << <a href='W16 查驗考試.html'>Previous</a> </div>
+</p>
+<p><button id="button">清除國旗</button> <button id="cuba">古巴國旗</button> <button id="china">中華人民共和國國旗</button> <button id="San">聖克里斯多福吉尼維斯國旗</button> <button id="usa">美國國旗</button> <button id="uk">英國國旗</button> <button id="canada">加拿大國旗</button></p>
+<script src="/../cp2019/downloads/dart_ex/w17ex4&amp;4+/w17ex4&amp;4+.js"></script>
+<script>
+function getDart(dirname){
+    source = "https://dartpad.github.io/embed-dart.html?gh_owner=s40523124gh_repo=cp2019&gh_path=dart_ex/" + dirname + "&theme=dark";
+    document.getElementById("iframe").src = source ;
+}
+
+function getHtmlDart(dirname){
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=s40523124&gh_repo=cp2019&gh_path=dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function getFlutter(dirname){
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=s40523124&gh_repo=cp2019&gh_path=dart_ex/" + dirname + "&theme=dark";
+document.getElementById("iframe").src = source ;
+}
+
+function largest(){
+document.getElementById("iframe").width = document.body.clientWidth ;
+document.getElementById("iframe").height = document.body.clientWidth*0.5 ;
+}
+
+function original(){
+document.getElementById("iframe").width = 800 ;
+document.getElementById("iframe").height = 600 ;
+}
+</script><br />W16 查驗考試 << <a href='W16 查驗考試.html'>Previous</a> </div>
         
     <!-- footer -->
       <div class="container">
