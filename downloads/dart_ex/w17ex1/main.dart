@@ -1,26 +1,23 @@
-KGtoLB(num k){
-return k* 2.2046226218;
+GtoB(num g){
+return g*2.2046;
 }
-LBtoKG(num l){
-return l*1/ 2.2046226218;
+BtoG(num b){
+return b*0.4535;
 }
-main() {
-    int len;
-    var type;
-    var number;
-  List temp = ["25k", "30l", "56l", "14k", "68l", "198k"];
-    for (var data in temp) {
-        len = data.length;
-    type = data[len-1];
-    number = data.substring(0, len-1);
-    number = int.parse(number);
-    if (type == "KG"){
-      //print("KG: $type, $number");
-      print("公斤 $number 公斤 = 英鎊 ${KGtoLB(number)} 英鎊");
-    }else{
-      //print("LB: $type, $number");
-      print("英鎊 $number 英鎊 = 公斤 ${LBtoKG(number)} 公斤");
-    }
-      
-  } // for
-} // main
+main(){
+var type;
+int len;
+var number;
+List weight= ["25kg", "30lb", "56lb", "14kg", "68lb", "198kg"];
+for (var i in weight) {
+len = i.length;
+type = i[len-2];
+number = i.substring(0, len-2);
+number = int.parse(number);
+if (type == "k"){
+print(" $number kg =  ${GtoB(number).toStringAsFixed(4)} lb");
+}else{
+print(" $number lb =  ${BtoG(number).toStringAsFixed(4)} kg");
+}
+}
+}
