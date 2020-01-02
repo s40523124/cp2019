@@ -1,28 +1,45 @@
+// 因為要使用超文件表單, 因此導入 html 程式庫
 import "dart:html";
-GtoB(num g){
-return g*2.2046;
+
+// kg = l*0.45359237
+// 定義一個 kg 轉 lb  函式
+KtoL(num k){
+return k*2.20462262;
 }
-BtoG(num b){
-return b*0.4536;
+
+// 定義一個 lb 轉 kg  函式
+LtoK(num l){
+return l*0.45359237;
 }
+
+// 每一個 Dart 程式都從 main() 開始執行
 main() {
+    // 透過表單, 取得使用者輸入的重量, 語法為數字加上 kg 或 lb
     InputElement tempInput = querySelector("#temp");
     querySelector("#submit").onClick.listen((e) => convert(tempInput.value));
 }
+
 convert(String data){
+  // 宣告 len 整數變數, 準備設為各字串的長度
   int len;
+  // 宣告 var 變數 type, 準備設為各字串最後一個字元, 可能為 kg 或 lb
   var type;
+  // 宣告 var 變數 number, 準備設為各字串中的數字
   var number;
+  // 準備將轉換結果顯示在 output Label 區
   LabelElement output = querySelector("#output");
+  // 直接取得單一輸入 data 字串
   len = data.length;
+  // 取得各筆資料的最後一個字元
   type = data[len-2];
   number = data.substring(0, len-2);
+  // 將字串轉為數字
   number = int.parse(number);
   if (type == "K" || type == "k"){
-     output.innerHtml = "公斤 $number kg = 英磅 ${GtoB(number).toStringAsFixed(2)} lb";
+     output.innerHtml = "$number kg =  ${KtoL(number).toStringAsFixed(2)} lb";
   } else if ((type == "L" || type == "l")){
-     output.innerHtml = "英磅 $number lb = 公斤 ${BtoG(number).toStringAsFixed(2)} kg";
+     output.innerHtml = "$number lb =  ${LtoK(number).toStringAsFixed(2)} kg";
   } else {
-     output.innerHtml = "請輸入數字加上 KG 或 LB!";
+     output.innerHtml = "請輸入數字加上 kg 或 lb !";
   }
-} 
+} // convert
