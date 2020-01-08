@@ -39,12 +39,12 @@ CMSimfly 網際內容管理
 <div class="slides">
 <section data-markdown>
     <script type="text/template">
-## CMSimfly 網際內容管理
+## 40523124期末學期簡報
 
-### KMOLab
+### Ander
 
 <small>
-Created by [KMOLab](http://lab.kmol.info/)
+Created by [Ander](https://github.com/s40523124/cp2019)
 </small>
 
 [CMSimfly 網誌](./../blog/index.html)
@@ -57,85 +57,95 @@ Created by [KMOLab](http://lab.kmol.info/)
 						
 <section data-markdown>
     <script type="text/template">
-# 投影片快捷鍵
+## 學習目的
 
-* 利用箭頭上下前後換頁
-* 按 f 鍵進入全螢幕模式 (full screen)
-* 按 s 鍵可以顯示投影片筆記 (show)
-* 按 o 鍵可以切換單張或全域檢視 (overview)
-* 按 b 或 . 鍵可以切換螢幕黑屏 (black)
-* 按 Esc 可以退出全螢幕或全域檢視 (Escape)
+* 以github為框架建立一系列的網誌、簡報等
+* 學習dartpad程式編譯並嵌入網誌中
+* 學習以dartpad寫一可應用之函式
+* 學習html/css/dart之間的關係與其意義
 
     </script>
 </section>
-
-
-						
-<section>
-<section data-markdown>
-    <script type="text/template">
-<!-- 請注意, @others 不可以內縮 -->
-# 數學符號與方程式
-
-Inline math equations go in like so: $\omega = d\phi / dt$. Display
-math should get its own line and be put in in double-dollarsigns:
-
-$$I = \int \rho R^{2} dV$$
-    </script>
-</section>
-
 
 
 						
 <section data-markdown>
     <script type="text/template">
-<!-- 請注意, @others 不可以內縮 -->
-## 利用 Markdown 寫投影片
-以下利用 Markdown 格式展示 Python 程式碼:
-```
-# use threading and subprocess to threading the make process
-import os
-import subprocess
-import threading
+## 學習成果-建立網誌
+<iframe src="https://www.youtube.com/embed/ndRW8cacESE" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-def domake():
-    
-    path = "../exposed/api/exposed"
-    ubuntu = "../Ubuntu"
-    
-    # create obj path
-    
-    if not os.path.exists(path+"/../obj"):
-        os.makedirs(path+"/../obj")
-    
-    subprocess.call(["make", "clean"], cwd=path)
-    subprocess.call("make", cwd=path)
-    subprocess.call(["cp", "{libslvs.so, _slvs.so, slvs.py}", ubuntu], cwd=path)
-    subprocess.call(["python3", "circle_ex.py"], cwd=path+"/"+ubuntu)
-    
-make = threading.Thread(target=domake)
-make.start()
-```
+
     </script>
 </section>
-
 
 
 						
 <section data-markdown>
     <script type="text/template">
-## 使用 iframe 導入影片
+## 學習成果-將Dartpad嵌入網誌
+<iframe src="https://www.youtube.com/embed/KiAnkV-JRVk" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-### 導入影片 template
 
-<iframe src="https://player.vimeo.com/video/183950627" width="640" height="492" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </script>
 </section>
 
 
 						
+<section data-markdown>
+    <script type="text/template">
+## 學習成果-編寫dart內容
+<iframe src="https://dartpad.github.io/embed-html.html?gh_owner=s40523124&gh_repo=cp2019&gh_path=downloads/dart_ex/for&theme=dark" width="800" height="550"></iframe>
+
+
+
+    </script>
 </section>
 
+
+						
+<section data-markdown>
+    <script type="text/template">
+## 學習成果-編寫dart內容2-溫度轉換
+<iframe src="https://dartpad.github.io/embed-html.html?gh_owner=s40523124&gh_repo=cp2019bg1&gh_path=downloads/dart_ex/w10&theme=dark" width="800" height="550"></iframe>
+
+
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+## 學習心得
+
+#### 剛接觸github時光是連git clone就遇上很多問題了
+#### 等到把問題都解決了才發現自己又多了一份git的知識了
+#### 筆記本裡面抄的都是git指令
+#### 學習了各種情況使用的git指令後 會慢慢潛移默化變成自己的知識
+#### 將來在接觸其他編譯系統也能有點概念
+#### 這門課讓我收穫最大的就是看懂程式碼
+#### 以Ctrl+U看程式碼 也能知道該網頁式如何撰寫的
+#### 藉此來學習新的網頁編輯方法
+
+
+    </script>
+</section>
+
+
+						
+<section data-markdown>
+    <script type="text/template">
+## 結尾
+
+# 謝謝老師 各位同學聆聽
+
+
+    </script>
+</section>
+
+
+						
 </div>
 
 </div>
