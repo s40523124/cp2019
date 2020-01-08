@@ -303,8 +303,8 @@ vertical: body pane on the botton</t>
 
 						
 </t>
-<t tx="leo.20200109031707.2">## 學習成果-編寫dart內容2-溫度轉換
-&lt;iframe src="https://dartpad.github.io/embed-html.html?gh_owner=s40523124&amp;gh_repo=cp2019bg1&amp;gh_path=downloads/dart_ex/w10&amp;theme=dark" width="800" height="550"&gt;&lt;/iframe&gt;
+<t tx="leo.20200109031707.2">## 學習成果-編寫dart內容2
+&lt;iframe src="https://dartpad.github.io/embed-html.html?gh_owner=s40523124&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/w10&amp;theme=dark" width="800" height="550"&gt;&lt;/iframe&gt;
 
 
 
